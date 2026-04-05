@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real-Time Currency Converter</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <div class="container">
+    <h2>Real-Time Currency Converter</h2>
+    <p class="subtitle">Live exchange rates with multiple currency results</p>
+
+    <form id="converterForm">
+      <div class="amount">
+        <p>Enter Amount</p>
+        <input id="amountInput" value="100" type="number" min="1" />
+      </div>
+
+      <div class="dropdown">
+        <div class="from">
+          <p>From</p>
+          <div class="select-container">
+            <img src="https://flagsapi.com/US/flat/64.png" alt="from flag" />
+            <select name="from"></select>
+          </div>
+        </div>
+
+        <div class="swap-icon" id="swapBtn" title="Swap currencies">
+          <i class="fa-solid fa-arrow-right-arrow-left"></i>
+        </div>
+
+        <div class="to">
+          <p>To</p>
+          <div class="select-container">
+            <img src="https://flagsapi.com/IN/flat/64.png" alt="to flag" />
+            <select name="to"></select>
+          </div>
+        </div>
+      </div>
+
+      <div class="msg" id="mainMessage">1 USD = 80 INR</div>
+      <div class="updated-time" id="updatedTime">Last updated: --</div>
+
+      <button type="submit">Get Exchange Rate</button>
+    </form>
+
+    <div class="extra-results">
+      <h3>Popular Currency Conversions</h3>
+      <div class="cards" id="multiResults"></div>
+    </div>
+  </div>
+
+  <script src="codes.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
