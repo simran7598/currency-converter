@@ -24,4 +24,34 @@ A responsive web application that converts currencies using real-time exchange r
 - REST API (ExchangeRate API)
 - JSON
 
+---
+
+## 📂 Project Structure
+
+project/
+├── index.html
+├── style.css
+├── main.js
+├── codes.js
+
+
+
+## 💡 Learning Outcomes
+
+- Learned how to integrate APIs using JavaScript
+- Worked with JSON data and asynchronous functions
+- Improved UI/UX design skills
+- Understood DOM manipulation and event handling
+
+---
+
+## ⚠️ Note
+
+For security, API keys should ideally be stored on the server side in production environments.
+
+---
+
+## 👩‍💻 Author
+
+Simran  
 
