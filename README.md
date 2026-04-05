@@ -24,6 +24,4 @@ A responsive web application that converts currencies using real-time exchange r
 - REST API (ExchangeRate API)
 - JSON
 
----
 
-## 📂 Project Structure
